@@ -16,7 +16,7 @@ import android.view.View;
 public class MusicLoading extends View {
     private Paint paint;
     private int length;
-    private int smallRadius=10;
+    private int smallRadius = 10;
 
     public MusicLoading(Context context) {
         this(context, null);
@@ -46,28 +46,41 @@ public class MusicLoading extends View {
         length = Math.min(w, h);
     }
 
-    private float startAngle1=0f;
-    private float startAngle2=180f;
-    private float sweepAngle=80f;
+    private float startAngle1 = 0f;
+    private float startAngle2 = 180f;
+    private float sweepAngle = 80f;
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        startAngle1 += 10;
+        startAngle2 += 10;
         paint.setStrokeWidth(10);
         canvas.drawCircle(length / 2, length / 2, smallRadius, paint);
 
         paint.setStrokeWidth(5);
-        canvas.drawCircle(length / 2, length / 2, length/2-smallRadius, paint);
+        canvas.drawCircle(length / 2, length / 2, length / 2 - smallRadius, paint);
 
-        RectF rectF=new RectF(length/2-length/3,length/2-length/3,length/2+length/3,length/2+length/3);
-        canvas.drawArc(rectF,startAngle1,sweepAngle,false,paint);
-        canvas.drawArc(rectF,startAngle2,sweepAngle,false,paint);
+        RectF rectF = new RectF(length / 2 - length / 3, length / 2 - length / 3, length / 2 + length / 3, length / 2 + length / 3);
+        canvas.drawArc(rectF, startAngle1, sweepAngle, false, paint);
+        canvas.drawArc(rectF, startAngle2, sweepAngle, false, paint);
 
-        rectF=new RectF(length/2-length/4,length/2-length/4,length/2+length/4,length/2+length/4);
+        rectF = new RectF(length / 2 - length / 4, length / 2 - length / 4, length / 2 + length / 4, length / 2 + length / 4);
 
-        canvas.drawArc(rectF,startAngle1,sweepAngle,false,paint);
-        canvas.drawArc(rectF,startAngle2,sweepAngle,false,paint);
+        canvas.drawArc(rectF, startAngle1, sweepAngle, false, paint);
+        canvas.drawArc(rectF, startAngle2, sweepAngle, false, paint);
+        if (isStart) {
+            invalidate();
 
+        }
+    }
 
+    private boolean isStart = true;
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        isStart = false;
     }
 }

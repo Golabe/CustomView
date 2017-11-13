@@ -1,1 +1,1 @@
-include ':app', ':path', ':drawtext', ':piechart', ':viewgroup', ':circlemenu', ':wifi', ':music_loading'
+include ':app', ':path', ':drawtext', ':piechart', ':viewgroup', ':circlemenu', ':wifi', ':music_loading', ':water_loading'

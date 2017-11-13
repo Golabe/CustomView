@@ -10,6 +10,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import java.lang.ref.WeakReference;
+
 
 /**
  * Created by yuequan on 2017/11/13.
@@ -47,7 +49,6 @@ public class WiFiView extends View {
                 handler.postDelayed(this, delayedMillis);
             }
         }, delayedMillis);
-
 
     }
 
@@ -91,7 +92,10 @@ public class WiFiView extends View {
 
         }
         canvas.restore();
+    }
 
-
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
     }
 }

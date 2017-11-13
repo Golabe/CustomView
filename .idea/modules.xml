@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/path/path.iml" filepath="$PROJECT_DIR$/path/path.iml" />
       <module fileurl="file://$PROJECT_DIR$/piechart/piechart.iml" filepath="$PROJECT_DIR$/piechart/piechart.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewgroup/viewgroup.iml" filepath="$PROJECT_DIR$/viewgroup/viewgroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/water_loading/water_loading.iml" filepath="$PROJECT_DIR$/water_loading/water_loading.iml" />
       <module fileurl="file://$PROJECT_DIR$/wifi/wifi.iml" filepath="$PROJECT_DIR$/wifi/wifi.iml" />
     </modules>
   </component>
