@@ -68,7 +68,9 @@ public class CanvasTestView extends View {
 
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        canvas.save();
+        canvas.translate(200,0);
+        canvas.rotate(-45);
         canvas.drawCircle(facePoint.x, facePoint.y, faceRadius, mPaint);
         canvas.drawLine(line1Start.x, line1Start.y, line1End.x, line1End.y, mPaint);
         canvas.drawLine(line2Start.x, line2Start.y, line2End.x, line2End.y, mPaint);
@@ -81,5 +83,7 @@ public class CanvasTestView extends View {
        // canvas.drawRect(mouth,mPaint);
 
         canvas.drawRect(leftEar,mPaint);
+        canvas.restore();
+
     }
 }

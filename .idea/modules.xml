@@ -4,7 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circlemenu/circlemenu.iml" filepath="$PROJECT_DIR$/circlemenu/circlemenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drawtext/drawtext.iml" filepath="$PROJECT_DIR$/drawtext/drawtext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/music_loading/music_loading.iml" filepath="$PROJECT_DIR$/music_loading/music_loading.iml" />
       <module fileurl="file://$PROJECT_DIR$/path/path.iml" filepath="$PROJECT_DIR$/path/path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piechart/piechart.iml" filepath="$PROJECT_DIR$/piechart/piechart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewgroup/viewgroup.iml" filepath="$PROJECT_DIR$/viewgroup/viewgroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifi/wifi.iml" filepath="$PROJECT_DIR$/wifi/wifi.iml" />
     </modules>
   </component>
 </project>

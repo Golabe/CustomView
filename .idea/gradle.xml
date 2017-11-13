@@ -9,7 +9,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/circlemenu" />
+            <option value="$PROJECT_DIR$/drawtext" />
+            <option value="$PROJECT_DIR$/music_loading" />
             <option value="$PROJECT_DIR$/path" />
+            <option value="$PROJECT_DIR$/piechart" />
+            <option value="$PROJECT_DIR$/viewgroup" />
+            <option value="$PROJECT_DIR$/wifi" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

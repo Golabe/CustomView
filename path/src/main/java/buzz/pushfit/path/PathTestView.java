@@ -41,11 +41,20 @@ public class PathTestView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        mPath.moveTo(200, 200);
-        mPath.lineTo(100, 200);
-        mPath.lineTo(100, 300);
-        mPath.lineTo(200, 300);
+//        mPath.moveTo(200, 200);
+//        mPath.lineTo(100, 200);
+//        mPath.lineTo(100, 300);
+//        mPath.lineTo(200, 300);
 //        mPath.close();
+
+
+//        贝塞尔曲线
+        mPath.moveTo(100,100);
+        mPath.quadTo(200,400,100,300);
+        mPath.quadTo(200,400,60,500);
+        mPath.lineTo(100,300);
+        mPath.lineTo(100,100);
+
         canvas.drawPath(mPath, mPaint);
     }
 }
